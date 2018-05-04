@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="app_title">Almacén de claves ACME</title>
+  <link rel="stylesheet" href="./css/photon.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <div class="window">
+    <header class="toolbar toolbar-header">
+      <h1 class="title">KeyStorage</h1>
+    </header>
+
+    <div class="window-content">
+      <div class="pane-group">
+        <div class="pane pane-sm sidebar">
+          <ul class="list-group">
+            <li class="list-group-header">
+              <input id="input-search" class="form-control" type="text" placeholder="Buscar registro">
+            </li>
+          </ul>
+
+          <ul id="register-list" class="list-group">            
+            
+          </ul>
+        </div>
+        <div class="pane">
+          
+          <form id="form" style="padding: 20px">
+            <div class="form-group">
+              <label>Título</label>
+              <input id="title" type="text" class="form-control" placeholder="Título">
+            </div>
+            <div class="form-group">
+              <label>Username</label>
+              <input id="username" type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input id="password" type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label>URL</label>
+              <input id="url" type="text" class="form-control" placeholder="URL">
+            </div <div class="form-group">
+            <label>Notas</label>
+            <textarea id="note" class="form-control" rows="5"></textarea>
+
+            <div class="form-actions">
+              <button id="btn_cancel" class="btn btn-form btn-default">Cancelar</button>
+              <button id="btn_ok" class="btn btn-form btn-primary">OK</button>
+              <button id="btn_edit" class="btn btn-form btn-primary">Editar</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>

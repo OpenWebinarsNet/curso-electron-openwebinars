@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Almacén de claves ACME</title>
+    <link rel="stylesheet" href="./css/photon.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="window">
+        <header class="toolbar toolbar-header">
+            <h1 class="title">KeyStorage - crear fichero de almacén</h1>
+        </header>
+
+        <div class="window-content">
+            <div class="pane-group">
+                <div class="pane">
+                    <form style="padding: 20px">
+                        <div class="form-group">
+                            <label>Archivo</label>
+                            <input id="file" type="text" class="form-control" placeholder="">
+                            <button id="btn_select_file" class="btn btn-form btn-default">Seleccionar</button>
+                        </div>
+                        <div class="form-group">
+                            <label>Clave</label>
+                            <input id="key" type="text" class="form-control" placeholder="Clave para encriptar">
+                        </div>
+                        <div class="form-actions">
+                            <button id="btn_cancel" class="btn btn-form btn-default">Cancel</button>
+                            <button id="btn_ok" class="btn btn-form btn-primary">OK</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        require("./form_create_filestorage")        
+    </script>
+</body>
+
+</html>
